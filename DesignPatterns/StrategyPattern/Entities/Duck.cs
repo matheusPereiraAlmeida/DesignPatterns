@@ -1,10 +1,11 @@
 ﻿using DesignPatterns.StrategyPattern.BehaviourExtension.FlyBehavior;
 using DesignPatterns.StrategyPattern.BehaviourExtension.QuackBehavior;
+using DesignPatterns.StrategyPattern.Interfaces;
 using System;
 
 namespace DesignPatterns.StrategyPattern.Entities
 {
-    public abstract class Duck
+    public class Duck : IDuck
     {
         IFlyBehavior _flyBehaviour;
         IQuackBehavior _quackBehaviour;
